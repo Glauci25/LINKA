@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: linear-gradient(45deg, rgb(177, 142, 177), rgb(255, 182, 194), rgb(219, 196, 153));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 30px; /* espaço entre título e parágrafos */
+}
+
+.conteudo {
+    max-width: 800px;
+    text-align: center;
+}
+
+.conteudo p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4B2E17; /* marrom escuro, combina com tons do fundo */
+    margin-bottom: 20px;
+}
