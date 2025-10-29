@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios</title>
+    <link rel="stylesheet" href="aba-relatorio.css">
+</head>
+<body>
+    <div class="menu"> <!-- Container geral: agrupa o ícone e o menu lateral-->
+        <div class = "menu-icon"><img src="https://icon-library.com/images/white-menu-icon/white-menu-icon-12.jpg" alt="Ícone Menu" width="60px" height="60px"></div> <!-- Ícone do MENU -->
+        <div class = "menu-lateral"> <!-- Caixas escondidas do menu -->
+            <a href="aba-relatorio.html">Relatórios</a>
+            <a href="#">Perfil do Colaborador</a>
+            <a href="#">Módulos</a>
+            <a href="#">Canal de Denúncia</a>
+            <a href="#">Canal Sua História</a>
+            <a href="#">Mais informações</a>
+        </div>
+    </div>
+
+    <div class="form-linha">
+
+      <div class="form-box">
+        <form>
+          <label for="data-inicio">Data Início:</label>
+          <input type="text" id="data-inicio"   placeholder="dd/mm/aaaa">
+        </form>
+      </div>
+
+      <div class="form-box">
+        <form>
+          <label for="data-final">Data Final:</label>
+          <input type="text" id="data-final"    placeholder="dd/mm/aaaa">
+        </form>
+      </div>
+
+      <div class="form-box">
+        <form>
+          <label for="filtro">Filtro:</label>
+          <select id="filtro">
+            <option value="" disabled selected>Selecione    uma opção</option>
+            <option value="genero">Gênero</option>
+            <option value="etnia">Etnia</option>
+            <option value="pcd">PCD</option>
+            <option value="faixa-etaria">Faixa Etária</ option>
+          </select>
+        </form>
+      </div>
+
+      <!-- Nova caixa de select para modelo de relatório    -->
+      <div class="form-box">
+        <form>
+          <label for="modelo-relatorio">Modelo de   Relatório:</label>
+          <select id="modelo-relatorio">
+            <option value="" disabled selected>Selecione    uma opção</option>
+            <option value="tabela">Tabela</option>
+            <option value="grafico">Gráfico</option>
+            <option value="lista">Lista</option>
+            <option value="dashboard">Dashboard</option>
+            <option value="infografico">Infográfico</option>
+          </select>
+        </form>
+      </div>
+        <a href="gera-relatorio.html"><button class="filtrar-btn">Filtrar</button></a>
+
+    </div>
+</body>
+</html>
